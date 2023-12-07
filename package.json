@@ -1,0 +1,23 @@
+{
+  "name": "d3",
+  "version": "1.0.0",
+  "description": "try d3 in react js in node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kitaps/my-d3-playground.git"
+  },
+  "author": "pratik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kitaps/my-d3-playground/issues"
+  },
+  "homepage": "https://github.com/Kitaps/my-d3-playground#readme"
+}
