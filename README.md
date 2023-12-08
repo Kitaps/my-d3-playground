@@ -4,6 +4,7 @@ test and learn d3 with me (also node on docker)
 ## Steps
 1. Do `npm init` to create the `package.json`
 2. Do Node Docker tutorial from [link](https://youtu.be/gAkwW2tuIqE)
+3. Do [You Don't Need to Rebuild Your Development Docker Image on Every Code Change](https://vsupalov.com/rebuilding-docker-image-development/#:~:text=In%20Conclusion,see%20the%20results%20right%20away!)
 
 ## Commands
 ### Docker🐳
