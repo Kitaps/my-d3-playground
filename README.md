@@ -3,8 +3,14 @@ test and learn d3 with me (also node on docker)
 
 ## Steps
 1. Do `npm init` to create the `package.json`
-2. Do Node Docker tutorial from [link](https://youtu.be/gAkwW2tuIqE)
-3. Do [Docker Documentation](https://docs.docker.com/compose/file-watch/) on hoy to watch files
+2. Do Node Docker tutorial from [link](https://youtu.be/gAkwW2tuIqE).
+    - We added `express` to the dependency in `package.json`
+3. Do [Docker Documentation](https://docs.docker.com/compose/file-watch/) on hoy to `watch` files and [add](https://github.com/remy/nodemon#nodemon) `nodemon`. 
+    - We add `"dev": "nodemon src/index.js"` line to scripts in `package.json`
+    - We now have two scripts in the `package.json`:
+        - `start` is to just run the app. 
+        - `dev` is to run the app with `nodemon` and see "real time" changes.
+            - To work with this we set the `docker-compose.yml` to automatically use this by using `command: npm run dev`. Now, every time we use the up command with docker-compose everythin will run with nodemon in the docker container, as we wanted. 
 
 ## Commands
 ### Docker🐳
