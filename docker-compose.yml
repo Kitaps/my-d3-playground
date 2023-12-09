@@ -4,5 +4,16 @@ services:
     build: .
     ports:
       - "8080:8080"
-    volumes:
-      - ./src:/app/src
+    # command: npm start
+    command: npm run dev
+    develop:
+      watch:
+        # Sync every change in the src folder to app/src folder
+        - action: sync
+          path: ./src
+          target: /app/src
+          ignore:
+            - node_modules/
+        # Adding new dependencies needs to rebuild the app
+        - action: rebuild
+          path: package.json
