@@ -3,8 +3,14 @@ test and learn d3 with me (also node on docker)
 
 ## Steps
 1. Do `npm init` to create the `package.json`
-2. Do Node Docker tutorial from [link](https://youtu.be/gAkwW2tuIqE)
-3. Do [You Don't Need to Rebuild Your Development Docker Image on Every Code Change](https://vsupalov.com/rebuilding-docker-image-development/#:~:text=In%20Conclusion,see%20the%20results%20right%20away!)
+2. Do Node Docker tutorial from [link](https://youtu.be/gAkwW2tuIqE).
+    - We added `express` to the dependency in `package.json`
+3. Do [Docker Documentation](https://docs.docker.com/compose/file-watch/) on hoy to `watch` files and [add](https://github.com/remy/nodemon#nodemon) `nodemon`. 
+    - We add `"dev": "nodemon src/index.js"` line to scripts in `package.json`
+    - We now have two scripts in the `package.json`:
+        - `start` is to just run the app. 
+        - `dev` is to run the app with `nodemon` and see "real time" changes.
+            - To work with this we set the `docker-compose.yml` to automatically use this by using `command: npm run dev`. Now, every time we use the up command with docker-compose everythin will run with nodemon in the docker container, as we wanted. 
 
 ## Commands
 ### Docker🐳
@@ -18,3 +24,4 @@ test and learn d3 with me (also node on docker)
 -`docker-compose up`
     - With this we don't need to build and run the dockerfile each time. The `docker-compose.yml` file does this for us with only one command. Now we only need to add flags and stuff to the compose yml file.
 -`docker-compose down`
+    - `docker-compose down --rmi "local"` also deletes the image(s)
