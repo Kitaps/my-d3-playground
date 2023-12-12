@@ -1,5 +1,21 @@
 # my-d3-playground
-test and learn d3 with me (also node on docker)
+test and learn d3 with me <s>(also node on docker)</s>
+(we don't need node nor docker for static pages)
+Seems like react works great on static pages. Let's gooooo
+[Repository Page Link](https://kitaps.github.io/my-d3-playground/page/)
+
+## Steps
+1. Setup GitHubPages
+2. React TikTakToe
+3. D3 in react in githubpage
+
+## References
+[How to separate an HTML-JS-CSS file into separate parts](https://reviewnprep.com/blog/the-benefits-of-separating-html-css-and-javascript-unleashing-the-power-of-web-development/)
+
+
+
+
+<s>
 
 ## Steps
 1. Do `npm init` to create the `package.json`
@@ -25,3 +41,4 @@ test and learn d3 with me (also node on docker)
     - With this we don't need to build and run the dockerfile each time. The `docker-compose.yml` file does this for us with only one command. Now we only need to add flags and stuff to the compose yml file.
 -`docker-compose down`
     - `docker-compose down --rmi "local"` also deletes the image(s)
+</s>
