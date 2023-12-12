@@ -2,6 +2,7 @@
 test and learn d3 with me <s>(also node on docker)</s>
 (we don't need node nor docker for static pages)
 Seems like react works great on static pages. Let's gooooo
+[Repository Page Link](https://kitaps.github.io/my-d3-playground/)
 
 ## Steps
 1. Setup GitHubPages
