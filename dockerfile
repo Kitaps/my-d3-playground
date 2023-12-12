@@ -1,9 +1,8 @@
-FROM node:12
-# TODO: Replace node version with newest LTS
+FROM node:20.10
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json ./
 # TODO: Replace fireship package json with my own
 
 RUN npm install
